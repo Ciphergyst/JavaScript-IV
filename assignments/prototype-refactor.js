@@ -29,8 +29,10 @@ class Instructor extends Person {
     this.favLanguage = attributes.favLanguage;
     this.catchPhrase = attributes.catchPhrase;
   }
+  demo(subject) {
+    console.log(`Today we are learning about ${this.subject}`);
+  }
 }
-demo(subject)  => (`Today we are learning about ${this.subject}`);
 
 grade(student.subject) => (`${student.name}r receives a perfect score on ${this.subject}`)
 
