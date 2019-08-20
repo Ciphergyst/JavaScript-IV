@@ -1,11 +1,13 @@
 // CODE here for your Lambda Classes
-{ "esversion":6 }
+{
+  "jshint esversion": 6
+};
 
 class Person {
-  constructor (attr){
-    this.name = name.Attributes;
-    this.age = age.Attributes;
-    this.location = location.Attributes;
+  constructor (Attrs){
+    this.name = name.Attrs;
+    this.age = age.Attrs;
+    this.location = location.Attrs;
   }
 }
 speak() {
@@ -13,11 +15,11 @@ speak() {
 }
 
 class Instructor extends Person {
-  constructor(attr) {
-    super(attr)
-    this.specialty = Attributes.specialty;
-    this.favLanguage = Attributes.favLanguage;
-    this.catchPhrase = Attributes.catchPhrase;
+  constructor(instructorAttrs) {
+    super(instructorAttrs)
+    this.specialty = instructorAttrs.specialty;
+    this.favLanguage = instructorAttrs.favLanguage;
+    this.catchPhrase = instructorAttrs.catchPhrase;
   }
 }
 demo(subject) {
@@ -28,11 +30,11 @@ demo(subject) {
 }
 
 class student extends Person {
-  constructor(attr) {
-    super(attr);
-    this.previousBackground = Attributes.previousBackground;
-    this.className = Attributes.className
-    this.favSubjects = Attributes.favSubjects
+  constructor(studentAttrs) {
+    super(studentAttrs);
+    this.previousBackground = studentAttrs.previousBackground;
+    this.className = studentAttrs.className
+    this.favSubjects = studentAttrs.favSubjects
   }
   listSubjects(){
     function subsFunc(subjects){

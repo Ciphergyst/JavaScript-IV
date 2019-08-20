@@ -7,38 +7,40 @@ Prototype Refactor
 2. Your goal is to refactor all of this code to use ES6 Classes. The console.log() statements should still return what is expected of them.
 
 */
-{ "esversion":6 }
+{
+  "esversion": 6
+}
 
 class Person {
-  constructor (attr){
-    this.name = name.Attributes;
-    this.age = age.Attributes;
-    this.location = location.Attributes;
+  constructor (attributes){
+    this.name = name.attributes;
+    this.age = age.attributes;
+    this.location = location.attributes;
   }
-}
-speak() {
+  speak() {
   console.log (`Hello my name is ${this.name} I am from ${this.location}`)
+ }
 }
 
 class Instructor extends Person {
-  constructor(attr) {
-    super(attr)
-    this.specialty = Attributes.specialty;
-    this.favLanguage = Attributes.favLanguage;
-    this.catchPhrase = Attributes.catchPhrase;
+  constructor(attributes) {
+    super(attributes)
+    this.specialty = attributes.specialty;
+    this.favLanguage = attributes.favLanguage;
+    this.catchPhrase = attributes.catchPhrase;
   }
 }
 demo(subject)  => (`Today we are learning about ${this.subject}`);
 
-grade(student,subject) => (`${student.name}r receives a perfect score on ${this.subject}`)
+grade(student.subject) => (`${student.name}r receives a perfect score on ${this.subject}`)
 
 
 class student extends Person {
-  constructor(attr) {
-    super(attr);
-    this.previousBackground = Attributes.previousBackground;
-    this.className = Attributes.className
-    this.favSubjects = Attributes.favSubjects
+  constructor(attributes) {
+    super(attributes);
+    this.previousBackground = attributes.previousBackground;
+    this.className = attributes.className
+    this.favSubjects = attributes.favSubjects
   }
   listSubjects() => subsFunc(subjects){
       console.log(subjects);
